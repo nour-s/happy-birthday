@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v2
-
+      - name: Use Ndoe
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12'
       - name: Generate your content
         run: yarn build
 
