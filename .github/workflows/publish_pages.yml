@@ -12,12 +12,14 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v2
-      - name: Use Ndoe
+      - name: Use Node
         uses: actions/setup-node@v2
         with:
           node-version: '12'
       - name: Generate your content
-        run: yarn build
+        run: |
+          yarn install
+          yarn build
 
       - name: Publish current workdir (which contains generated content) to GitHub Pages
         uses: rayluo/github-pages-overwriter@v1.2
