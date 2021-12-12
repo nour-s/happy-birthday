@@ -15,12 +15,13 @@ const DIALOGS: ILevelDialog[] = [
 	},
 	{
 		question:
-			'Who is the best guy in the world?<br>' +
+			'Who is the best father in the world?<br>' +
 			'<span class="dialog-hint">(...he made this game)</span>',
 		answers: [
 			'dad',
 			'nour',
-			'father'
+			'father',
+			'nour sabouny'
 		],
 		hint: '(?) Come on, just look at the bottom of the screen!'
 	},
